@@ -1,59 +1,76 @@
-# ⌬ 𝐇𝐞𝐦𝐚𝐧𝐭𝐡 𝐖𝐙𝐌𝐋-𝐗
+# ⌬ 𝐇𝐞𝐦𝐚𝐧𝐭𝐡 𝐁𝐨𝐭 (𝐖𝐙𝐌𝐋-𝐗)
 
-This is a powerful Telegram bot that can mirror/leech files from various sources to Cloud Drives or Telegram.
-
-## 📌 Features
-- Mirror/Leech from links, telegram files, torrents, nzb, rclone-cloud.
-- Upload to rclone cloud, Google Drive or Telegram.
-- Highly customizable and feature-rich.
+This is a powerful, feature-rich Telegram bot that allows users to mirror and leech files from various sources (Direct Links, Torrents, NZB, etc.) to Cloud Drives (Google Drive, Rclone supported clouds) or Telegram.
 
 ---
 
-## 🚀 VPS Deployment Guide
+## 🚀 Step-by-Step VPS Deployment Guide
 
-### 1. Prerequisites
-Before you begin, ensure you have the following installed on your VPS:
-- **Docker**: [Installation Guide](https://docs.docker.com/engine/install/)
-- **Docker Compose**: [Installation Guide](https://docs.docker.com/compose/install/)
-- **Git**: `sudo apt install git -y`
+Follow these exact steps to deploy the bot on your Ubuntu/Debian VPS.
 
-### 2. Installation
-Clone this repository and navigate into the directory:
+### 1. Update your VPS
+First, make sure your system is up to date:
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+### 2. Install Git and Essential Tools
+```bash
+sudo apt install git wget nano -y
+```
+
+### 3. Install Docker and Docker Compose
+Run the following commands to install Docker and Docker Compose automatically:
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+```
+Check if Docker is installed:
+```bash
+docker --version
+```
+
+### 4. Clone the Repository
+Replace `YourGitHubUsername` with your actual username if you've forked this:
 ```bash
 git clone https://github.com/Hemanth/HemanthBot mirrorbot && cd mirrorbot
 ```
 
-### 3. Configuration
-Copy the sample config file and edit it with your credentials:
+### 5. Setup Configuration
+Copy the sample configuration file:
 ```bash
 cp config_sample.py config.py
-# Use nano or any other editor to fill in the required variables
+```
+Open it with nano:
+```bash
 nano config.py
 ```
+**Mandatory Variables to Fill:**
+- `BOT_TOKEN`: Your Telegram Bot Token from [@BotFather](http://t.me/BotFather)
+- `OWNER_ID`: Your Telegram User ID from [@MissRose_bot](http://t.me/MissRose_bot) (type /id)
+- `TELEGRAM_API`: Your Telegram API ID from [my.telegram.org](https://my.telegram.org)
+- `TELEGRAM_HASH`: Your Telegram API Hash from [my.telegram.org](https://my.telegram.org)
 
-### 4. Build and Run
-You can easily build and run the bot using Docker Compose:
+*Press `CTRL+O`, `Enter`, and `CTRL+X` to save and exit nano.*
+
+### 6. Build and Deploy
+Now, start the bot using Docker Compose. This will download everything and start the bot in the background:
 ```bash
-# Build and start the containers in detached mode
 sudo docker-compose up -d --build
 ```
 
-To view logs:
-```bash
-sudo docker-compose logs -f
-```
-
-To stop the bot:
-```bash
-sudo docker-compose stop
-```
+### 7. Managing the Bot
+- **View Logs:** `sudo docker-compose logs -f`
+- **Restart Bot:** `sudo docker-compose restart`
+- **Stop Bot:** `sudo docker-compose stop`
+- **Rebuild (after editing config):** `sudo docker-compose up -d --build`
 
 ---
 
 ## 🏅 Credits & Support
 - **Owner/Dev:** [Hemanth](http://t.me/ALONEKINGSTAR77)
 - **Telegram Username:** [@alonekingstar77](http://t.me/ALONEKINGSTAR77)
-- **Telegram Channel:** [Join Here](http://t.me/ALONEKINGSTAR77)
+- **Support Group:** [Join Here](http://t.me/ALONEKINGSTAR77)
 
 ---
 *Powered by Hemanth*
