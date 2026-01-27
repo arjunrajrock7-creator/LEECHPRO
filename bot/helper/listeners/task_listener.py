@@ -41,6 +41,7 @@ from ..ext_utils.files_utils import (
 from ..ext_utils.links_utils import is_gdrive_id
 from ..ext_utils.status_utils import get_readable_file_size, get_readable_time
 from ..ext_utils.task_manager import check_running_tasks, start_from_queued
+from ..ext_utils.zip_pipeline_utils import zip_pipeline_process
 from ..mirror_leech_utils.uphoster_utils.gofile_utils.upload import GoFileUpload
 from ..mirror_leech_utils.uphoster_utils.buzzheavier_utils.upload import (
     BuzzHeavierUpload,
@@ -230,6 +231,12 @@ class TaskListener(TaskConfig):
             self.size = await get_path_size(up_dir)
             self.clear()
             await remove_excluded_files(up_dir, self.excluded_extensions)
+
+        if (Config.ENABLE_ZIP_PIPELINE or self.is_zip_pipeline) and (Config.AUTO_MERGE or self.is_zip_pipeline):
+            # Update status to Merging
+            await update_status_message(self.message.chat.id) # This might need more specific status but zip_pipeline_process doesn't have its own status dict entry yet
+            if await zip_pipeline_process(self, up_path):
+                self.size = await get_path_size(up_dir)
 
         if self.ffmpeg_cmds:
             up_path = await self.proceed_ffmpeg(

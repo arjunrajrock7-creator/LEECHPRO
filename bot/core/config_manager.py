@@ -23,6 +23,9 @@ class Config:
     DISABLE_MULTI = False
     DISABLE_SEED = False
     DISABLE_FF_MODE = False
+    ENABLE_ZIP_PIPELINE = False
+    AUTO_EXTRACT = False
+    AUTO_MERGE = False
     EQUAL_SPLITS = False
     EXCLUDED_EXTENSIONS = ""
     FFMPEG_CMDS = {}

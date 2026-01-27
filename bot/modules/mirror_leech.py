@@ -61,6 +61,7 @@ class Mirror(TaskListener):
         is_jd=False,
         is_nzb=False,
         is_uphoster=False,
+        is_zip_pipeline=False,
         same_dir=None,
         bulk=None,
         multi_tag=None,
@@ -83,6 +84,7 @@ class Mirror(TaskListener):
         self.is_jd = is_jd
         self.is_nzb = is_nzb
         self.is_uphoster = is_uphoster
+        self.is_zip_pipeline = is_zip_pipeline
 
     async def new_event(self):
         text = self.message.text.split("\n")
@@ -308,6 +310,7 @@ class Mirror(TaskListener):
                 self.is_jd,
                 self.is_nzb,
                 self.is_uphoster,
+                self.is_zip_pipeline,
                 self.same_dir,
                 self.bulk,
                 self.multi_tag,

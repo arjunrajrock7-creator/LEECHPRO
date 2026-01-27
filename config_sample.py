@@ -41,6 +41,9 @@ DISABLE_BULK = False
 DISABLE_MULTI = False
 DISABLE_SEED = False
 DISABLE_FF_MODE = False
+ENABLE_ZIP_PIPELINE = False
+AUTO_EXTRACT = False
+AUTO_MERGE = False
 
 # Telegraph
 AUTHOR_NAME = "HemanthBot"

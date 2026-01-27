@@ -106,6 +106,7 @@ class TaskConfig:
         self.is_jd = False
         self.is_clone = False
         self.is_uphoster = False
+        self.is_zip_pipeline = False
         self.is_gdrive = False
         self.is_rclone = False
         self.is_ytdlp = False
@@ -535,6 +536,9 @@ class TaskConfig:
                 )
             )
 
+            if not self.extract:
+                self.extract = Config.AUTO_EXTRACT
+
             if self.thumb != "none" and is_telegram_link(self.thumb):
                 msg = (await get_tg_link_message(self.thumb))[0]
                 self.thumb = (
@@ -618,6 +622,7 @@ class TaskConfig:
             is_jd=self.is_jd,
             is_nzb=self.is_nzb,
             is_uphoster=self.is_uphoster,
+            is_zip_pipeline=self.is_zip_pipeline,
             same_dir=self.same_dir,
             bulk=self.bulk,
             multi_tag=self.multi_tag,
@@ -662,6 +667,7 @@ class TaskConfig:
                 is_jd=self.is_jd,
                 is_nzb=self.is_nzb,
                 is_uphoster=self.is_uphoster,
+                is_zip_pipeline=self.is_zip_pipeline,
                 same_dir=self.same_dir,
                 bulk=self.bulk,
                 multi_tag=self.multi_tag,

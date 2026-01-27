@@ -51,6 +51,7 @@ class BotCommands:
         "Select": ["select", "sel"],
         "NzbSearch": ["nzbsearch", "ns"],
         "Plugins": "plugins",
+        "ZipMerge": ["zipmerge", "zm"],
     }
 
     @classmethod

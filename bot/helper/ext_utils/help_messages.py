@@ -409,6 +409,7 @@ def get_bot_commands():
         "Log": "[SUDO] Get Bot Logs for Internal Working",
         "Restart": "[SUDO] Reboot bot",
         "RestartSessions": "[SUDO] Reboot User Sessions",
+        "ZipMerge": "[link/file] Zip Pipeline: Download, Extract, Merge and Upload",
     }
 
     commands = static_commands.copy()
@@ -544,6 +545,8 @@ def get_help_string():
             )
         elif key == "Rss":
             help_lines.append(f"/{BotCommands.RssCommand}: RSS Menu.")
+        elif key == "ZipMerge":
+            help_lines.append(f"{cmd_str}: Zip Pipeline: Download, Extract, Merge and Upload.")
 
     return "\n".join(help_lines)
 
