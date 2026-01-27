@@ -1,9 +1,9 @@
 # REQUIRED CONFIG
-BOT_TOKEN = ""
-OWNER_ID = 0
-TELEGRAM_API = 0
-TELEGRAM_HASH = ""
-DATABASE_URL = ""
+BOT_TOKEN = "8212814456:AAEyijOk7aKhW5y6g1kGW6S8I02sz0ozo7w"
+OWNER_ID = 8557029592
+TELEGRAM_API = 31355944
+TELEGRAM_HASH = "167e960d46363e3098f9c1fc78496adb"
+DATABASE_URL = "mongodb+srv://botskingdom2:t7ognZuINrNfH3tj@cluster0.ystdy4m.mongodb.net/?retryWrites=true&w=majority"
 
 # OPTIONAL CONFIG
 DEFAULT_LANG = "en"
@@ -11,8 +11,8 @@ TG_PROXY = (
     {}
 )  # {"scheme": ”socks5”, "hostname": ””, "port": 1234, "username": ”user”, "password": ”pass”}
 USER_SESSION_STRING = ""
-CMD_SUFFIX = ""
-AUTHORIZED_CHATS = ""
+CMD_SUFFIX = "1"
+AUTHORIZED_CHATS = "-1003546488840"
 SUDO_USERS = ""
 STATUS_LIMIT = 10
 DEFAULT_UPLOAD = "rc"
@@ -128,26 +128,7 @@ JD_EMAIL = ""
 JD_PASS = ""
 
 # Sabnzbd
-USENET_SERVERS = [
-    {
-        "name": "main",
-        "host": "",
-        "port": 563,
-        "timeout": 60,
-        "username": "",
-        "password": "",
-        "connections": 8,
-        "ssl": 1,
-        "ssl_verify": 2,
-        "ssl_ciphers": "",
-        "enable": 1,
-        "required": 0,
-        "optional": 0,
-        "retention": 0,
-        "send_group": 0,
-        "priority": 0,
-    }
-]
+USENET_SERVERS = []
 
 # Update
 UPSTREAM_REPO = ""
@@ -169,8 +150,8 @@ THUMBNAIL_LAYOUT = ""
 
 # Log Channels
 LEECH_DUMP_CHAT = ""
-LINKS_LOG_ID = ""
-MIRROR_LOG_ID = ""
+LINKS_LOG_ID = "-1003409524277"
+MIRROR_LOG_ID = "-1003409524277"
 
 # qBittorrent/Aria2c
 TORRENT_TIMEOUT = 0
