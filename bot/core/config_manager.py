@@ -26,6 +26,8 @@ class Config:
     ENABLE_ZIP_PIPELINE = False
     AUTO_EXTRACT = False
     AUTO_MERGE = False
+    ENABLE_AUTO_MERGE = False
+    MERGE_EPISODES = False
     EQUAL_SPLITS = False
     EXCLUDED_EXTENSIONS = ""
     FFMPEG_CMDS = {}

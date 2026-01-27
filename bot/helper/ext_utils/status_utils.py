@@ -37,6 +37,7 @@ class MirrorStatus:
     STATUS_YT = "YouTube"
     STATUS_METADATA = "Metadata"
     STATUS_MERGING = "Merging"
+    STATUS_SORTING = "Sorting"
 
 
 class EngineStatus:

@@ -233,9 +233,12 @@ class TaskListener(TaskConfig):
             await remove_excluded_files(up_dir, self.excluded_extensions)
 
         if (Config.ENABLE_ZIP_PIPELINE or self.is_zip_pipeline) and (Config.AUTO_MERGE or self.is_zip_pipeline):
-            # Update status to Merging
-            await update_status_message(self.message.chat.id) # This might need more specific status but zip_pipeline_process doesn't have its own status dict entry yet
             if await zip_pipeline_process(self, up_path):
+                self.size = await get_path_size(up_dir)
+
+        if Config.ENABLE_AUTO_MERGE or Config.MERGE_EPISODES:
+            from ..ext_utils.episode_merge import episode_merge_process
+            if await episode_merge_process(self, up_path):
                 self.size = await get_path_size(up_dir)
 
         if self.ffmpeg_cmds:
