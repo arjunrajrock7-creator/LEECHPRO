@@ -1,106 +1,119 @@
 <p align="center">
-  <img src="https://graph.org/file/639fe4239b78e5862b302.jpg" alt="HemanthBot Logo" width="200">
+  <img src="https://graph.org/file/639fe4239b78e5862b302.jpg" alt="HemanthBot Logo" width="250">
 </p>
 
 <h1 align="center">⌬ 𝐇𝐞𝐦𝐚𝐧𝐭𝐡 𝐁𝐨𝐭 (𝐖𝐙𝐌𝐋-𝐗)</h1>
 
 <p align="center">
-  <i>A powerful, feature-rich Telegram Mirror & Leech bot based on the wzv3 branch.</i>
+  <i>The Ultimate Mirror & Leech Solution for Telegram. Built for speed, efficiency, and power.</i>
 </p>
 
 <p align="center">
   <a href="http://t.me/ALONEKINGSTAR77">
-    <img src="https://img.shields.io/badge/Telegram-Channel-blue?style=for-the-badge&logo=telegram" alt="Telegram Channel">
+    <img src="https://img.shields.io/badge/Telegram-Channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Channel">
   </a>
   <a href="http://t.me/ALONEKINGSTAR77">
-    <img src="https://img.shields.io/badge/Support-Group-orange?style=for-the-badge&logo=telegram" alt="Support Group">
+    <img src="https://img.shields.io/badge/Support-Group-orange?style=for-the-badge&logo=telegram&logoColor=white" alt="Support Group">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Version">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Docker-Enabled-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
   </a>
 </p>
 
 ---
 
-## 🌟 Key Features
+## 💎 Exclusive Features
 
-- **🚀 Multiple Sources:** Mirror/Leech from Direct Links, Torrents, NZB, YouTube-DLP, and Rclone paths.
-- **☁️ Cloud Support:** Upload to Google Drive, Rclone-supported clouds, or directly to Telegram.
-- **📦 Zip Pipeline:** Automated DOWNLOAD ➜ EXTRACT ➜ MERGE ➜ UPLOAD workflow via `/zipmerge`.
-- **🎬 Auto Episode Merge:** Intelligent episodic video detection and lossless merging into a single file.
-- **🛠 Highly Customizable:** Support for custom metadata, thumbnails, name substitution, and FFmpeg commands.
-- **📱 Premium UI:** Stylish Unicode fonts and detailed status messages.
+| Feature | Description |
+| :--- | :--- |
+| **🚀 Hybrid Leech** | Uses both Bot and User sessions to maximize upload speeds and bypass limits. |
+| **📦 Zip Pipeline** | Automated DOWNLOAD ➜ EXTRACT ➜ MERGE ➜ UPLOAD flow for massive convenience. |
+| **🎬 Episode Merge** | Intelligent detection and lossless merging of episodic video files. |
+| **☁️ Multi-Cloud** | Native support for Google Drive, Rclone, and Telegram Leeching. |
+| **🛠 Metadata Engine** | Inject custom titles, authors, and years directly into your media files. |
+| **📱 Premium UI** | Clean, attractive status messages with stylish Unicode fonts. |
 
 ---
 
-## 🚀 VPS Deployment Guide (Ubuntu/Debian)
+## 📜 Bot Commands Index
 
-Deploying HemanthBot is straightforward using Docker. Follow these steps for a clean installation.
+### 📤 Mirroring & Leeching
+| Command | Alias | Description |
+| :--- | :--- | :--- |
+| `/mirror` | `/m` | Mirror any link/file to your configured cloud storage. |
+| `/leech` | `/l` | Leech any link/file directly to Telegram. |
+| `/zipmerge` | `/zm` | Run the automated Zip Pipeline (Extract + Merge). |
+| `/qbmirror` | `/qm` | Mirror torrents via qBittorrent. |
+| `/qbleech` | `/ql` | Leech torrents via qBittorrent. |
+| `/ytdl` | `/y` | Download from YouTube and other social media via yt-dlp. |
+| `/ytdlleech` | `/yl` | Leech from social media directly to Telegram. |
 
-### 1️⃣ System Update
-Ensure your VPS is running the latest packages:
+### 🛠 Tools & Management
+| Command | Description |
+| :--- | :--- |
+| `/status` | Monitor real-time progress of all active tasks. |
+| `/cancel` | Stop a specific task by its GID or by replying to it. |
+| `/search` | Search for torrents using integrated API plugins. |
+| `/list` | Browse and search files within your Google Drive. |
+| `/mediainfo` | Get technical details (codec, bitrate, etc.) of a file. |
+| `/userset` | Personalize your experience (Thumbnails, Metadata, Flags). |
+| `/stats` | View system resource usage and bot statistics. |
+
+---
+
+## 🚀 Pro VPS Deployment Guide
+
+### 🛠 Prerequisites
+Ensure you have a VPS running **Ubuntu 22.04+** or **Debian 11+**.
+
+### 1️⃣ Prepare Environment
 ```bash
 sudo apt update && sudo apt upgrade -y
+sudo apt install git wget nano python3 python3-pip -y
 ```
 
-### 2️⃣ Install Required Tools
-Install Git and other essential utilities:
-```bash
-sudo apt install git wget nano -y
-```
-
-### 3️⃣ Install Docker & Docker Compose
-The easiest way to install Docker is using the official script:
+### 2️⃣ Install Docker & Compose
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
 
-### 4️⃣ Clone the Repository
-Clone your project to the VPS:
+### 3️⃣ Setup the Bot
 ```bash
 git clone https://github.com/Hemanth/HemanthBot mirrorbot
 cd mirrorbot
-```
-
-### 5️⃣ Configuration
-Copy the sample configuration file and edit it with your credentials:
-```bash
 cp config_sample.py config.py
 nano config.py
 ```
+> **Note:** Fill in your `BOT_TOKEN`, `OWNER_ID`, `API_ID`, `API_HASH`, and `DATABASE_URL`.
 
-**Essential Variables:**
-- `BOT_TOKEN`: Get from [@BotFather](http://t.me/BotFather)
-- `OWNER_ID`: Your Telegram ID (type `/id` to [@MissRose_bot](http://t.me/MissRose_bot))
-- `TELEGRAM_API` & `TELEGRAM_HASH`: Get from [my.telegram.org](https://my.telegram.org)
-- `DATABASE_URL`: Your MongoDB connection string.
-
-*💡 Pro Tip: Use `CTRL+O`, `Enter`, and `CTRL+X` to save and exit nano.*
-
-### 6️⃣ Launch the Bot
-Start the bot in the background using Docker Compose:
+### 4️⃣ Fire It Up!
 ```bash
 sudo docker-compose up -d --build
 ```
 
 ---
 
-## 🛠 Management Commands
+## 🛠 Advanced Management
 
 | Action | Command |
 | :--- | :--- |
-| **View Logs** | `sudo docker-compose logs -f` |
-| **Restart Bot** | `sudo docker-compose restart` |
-| **Stop Bot** | `sudo docker-compose stop` |
-| **Update/Rebuild** | `sudo docker-compose up -d --build` |
+| **Live Logs** | `sudo docker-compose logs -f` |
+| **Safe Stop** | `sudo docker-compose stop` |
+| **Quick Restart** | `sudo docker-compose restart` |
+| **Apply Updates** | `git pull && sudo docker-compose up -d --build` |
 
 ---
 
 ## 🏅 Credits & Support
 
-- **Owner/Developer:** [Hemanth](http://t.me/ALONEKINGSTAR77)
-- **Telegram Username:** [@alonekingstar77](http://t.me/ALONEKINGSTAR77)
-- **Telegram Channel:** [Join Here](http://t.me/ALONEKINGSTAR77)
+- **Visionary:** [Hemanth](http://t.me/ALONEKINGSTAR77)
+- **Dev Team:** [@alonekingstar77](http://t.me/ALONEKINGSTAR77)
+- **Official Channel:** [Hemanth Updates](http://t.me/ALONEKINGSTAR77)
 
----
 <p align="center">
-  <b>Powered by Hemanth</b>
+  <b>© 2025 HemanthBot. All Rights Reserved.</b>
 </p>
