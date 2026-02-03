@@ -20,7 +20,7 @@
 
 ## 📖 Overview
 
-**HT BOTZ** is a specialized fork of the powerful **WZML-X** (Wanda Zebra) project. It is designed to be a one-stop solution for Telegram power users who need to mirror content to the cloud, leech files directly to Telegram, and perform advanced video processing on the fly.
+**HT BOTZ** is a specialized fork of the powerful **HT-BOTZ-X** (Wanda Zebra) project. It is designed to be a one-stop solution for Telegram power users who need to mirror content to the cloud, leech files directly to Telegram, and perform advanced video processing on the fly.
 
 ---
 
@@ -68,7 +68,7 @@ Get your bot up and running in minutes using one of our supported deployment met
 
 ## 🤝 Support & Credits
 
-- **Original Project**: [SilentDemonSD/WZML-X](https://github.com/SilentDemonSD/WZML-X)
+- **Original Project**: [HT-BOTZ-Dev/HT-BOTZ-X](https://github.com/HT-BOTZ-Dev/HT-BOTZ-X)
 - **Framework**: Built with [Pyrogram](https://github.com/pyrogram/pyrogram) in Python.
 
 ---
