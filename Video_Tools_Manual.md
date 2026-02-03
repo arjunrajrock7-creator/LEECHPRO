@@ -1,6 +1,6 @@
 # 🎬 Video Tools Manual (`-vt`)
 
-The **Video Tools** suite is a signature feature of **HT BOTZ**, allowing you to manipulate media files directly during the mirroring process.
+The **Video Tools** suite is a signature feature of **⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡**, allowing you to manipulate media files directly during the mirroring process.
 
 ---
 

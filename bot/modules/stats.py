@@ -132,7 +132,7 @@ async def get_stats(event, key="home"):
             )[0]
         official_v = (
             await cmd_exec(
-                f"curl -o latestversion.py https://raw.githubusercontent.com/HT-BOTZ-Dev/HT-BOTZ-X/{Config.UPSTREAM_BRANCH}/bot/version.py -s && python3 latestversion.py && rm latestversion.py",
+                f"curl -o latestversion.py https://raw.githubusercontent.com/HEMANTH/⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡/{Config.UPSTREAM_BRANCH}/bot/version.py -s && python3 latestversion.py && rm latestversion.py",
                 True,
             )
         )[0]

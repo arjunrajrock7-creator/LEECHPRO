@@ -27,7 +27,7 @@ def update_repo():
         commands = [
             "git init -q",
             "git config --global user.email 'bot@htbotz.local'",
-            "git config --global user.name 'HT-BOTZ-Deployer'",
+            "git config --global user.name 'hemanth-bot-Deployer'",
             "git add .",
             'git commit -sm "local-backup" -q',
             f"git remote add origin {upstream_repo}",

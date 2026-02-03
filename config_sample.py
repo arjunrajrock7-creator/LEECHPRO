@@ -43,7 +43,7 @@ DISABLE_SEED = False
 DISABLE_FF_MODE = False
 
 # Telegraph
-AUTHOR_NAME = "HT-BOTZ-X"
+AUTHOR_NAME = "⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡"
 AUTHOR_URL = "https://t.me/WZML_X"
 
 # Task Limits
@@ -109,7 +109,7 @@ STOP_DUPLICATE = False
 INDEX_URL = ""
 
 # YT Tools
-YT_DESP = "Uploaded to YouTube by HT-BOTZ-X bot"
+YT_DESP = "Uploaded to YouTube by ⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ bot"
 YT_TAGS = ["telegram", "bot", "youtube"]  # or as a comma-separated string
 YT_CATEGORY_ID = 22
 YT_PRIVACY_STATUS = "unlisted"

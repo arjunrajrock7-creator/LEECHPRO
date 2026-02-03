@@ -1,6 +1,6 @@
-# 🚀 HT BOTZ Deployment Guide
+# 🚀 ⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ Deployment Guide
 
-This document provides a comprehensive walkthrough for setting up your **HT BOTZ** instance on various platforms.
+This document provides a comprehensive walkthrough for setting up your **⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡** instance on various platforms.
 
 ---
 
@@ -40,8 +40,8 @@ docker-compose up -d --build
 
 ### 3. Alternative (Direct Docker Build)
 ```bash
-docker build -t ht-botz .
-docker run -d --name ht-botz --env-file config.env ht-botz
+docker build -t hemanth-bot .
+docker run -d --name hemanth-bot --env-file config.env hemanth-bot
 ```
 
 ---

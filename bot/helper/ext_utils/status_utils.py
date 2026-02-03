@@ -196,8 +196,8 @@ def get_progress_bar_string(pct):
     pct = float(str(pct).strip("%"))
     p = min(max(pct, 0), 100)
     cFull = int(p // 8)
-    p_str = "⬢" * cFull
-    p_str += "⬡" * (12 - cFull)
+    p_str = "◈" * cFull
+    p_str += "◇" * (12 - cFull)
     return f"[{p_str}]"
 
 
@@ -286,7 +286,7 @@ async def get_readable_message(sid, is_user, page_no=1, status="All", page_step=
         else:
             msg = f"No Active {status} Tasks!\n\n"
 
-    msg += "⌬ <b><u>Bot Stats</u></b>"
+    msg += "⌬ <b><u>⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ Stats</u></b>"
     buttons = ButtonMaker()
     if not is_user:
         buttons.data_button("📜 TStats", f"status {sid} ov", position="header")
@@ -302,6 +302,7 @@ async def get_readable_message(sid, is_user, page_no=1, status="All", page_step=
             if status_value != status:
                 buttons.data_button(label, f"status {sid} st {status_value}")
     buttons.data_button("♻️ Refresh", f"status {sid} ref", position="header")
+    buttons.url_button("⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ Support", "https://t.me/HEMANTH_Support", position="footer")
     button = buttons.build_menu(8)
     msg += f"\n┟ <b>CPU</b> → {cpu_percent()}% | <b>F</b> → {get_readable_file_size(disk_usage(DOWNLOAD_DIR).free)} [{round(100 - disk_usage(DOWNLOAD_DIR).percent, 1)}%]"
     msg += f"\n┖ <b>RAM</b> → {virtual_memory().percent}% | <b>UP</b> → {get_readable_time(time() - bot_start_time)}"

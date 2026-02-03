@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     gcc g++ make python3-dev jq \
     && rm -rf /var/lib/apt/lists/*
 
-# Create symlinks for HT-BOTZ-X custom binary names
+# Create symlinks for ⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ custom binary names
 RUN ln -s /usr/bin/aria2c /usr/bin/blitzfetcher && \
     ln -s /usr/bin/qbittorrent-nox /usr/bin/stormtorrent && \
     ln -s /usr/bin/ffmpeg /usr/bin/mediaforge && \

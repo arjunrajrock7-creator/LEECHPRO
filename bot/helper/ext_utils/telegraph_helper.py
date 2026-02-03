@@ -74,12 +74,10 @@ class TelegraphHelper:
                     nxt_page += 1
             await self.edit_page(
                 path=path[prev_page],
-                title="HT-BOTZ-X Torrent Search",
+                title="⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ Torrent Search",
                 content=content,
             )
         return
 
 
 telegraph = TelegraphHelper(Config.AUTHOR_NAME, Config.AUTHOR_URL)
-
-print(__name__)

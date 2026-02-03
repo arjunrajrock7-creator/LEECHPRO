@@ -34,7 +34,7 @@ class SabnzbdClient(JobFunctions):
         self._default_params = {"apikey": api_key, "output": "json"}
         self._VERIFY_CERTIFICATE = VERIFY_CERTIFICATE
         self._RETRIES = RETRIES
-        self._HTTPX_REQUETS_ARGS = HTTPX_REQUETS_ARGS
+        self._hemTPX_REQUETS_ARGS = HTTPX_REQUETS_ARGS
         self._http_session = None
         if not self._VERIFY_CERTIFICATE:
             disable_warnings(InsecureRequestWarning)
@@ -64,7 +64,7 @@ class SabnzbdClient(JobFunctions):
             requests_args = {}
         session = self._session()
         params |= kwargs
-        requests_kwargs = {**self._HTTPX_REQUETS_ARGS, **requests_args}
+        requests_kwargs = {**self._hemTPX_REQUETS_ARGS, **requests_args}
         retries = 5
         response = None
         for retry_count in range(retries):

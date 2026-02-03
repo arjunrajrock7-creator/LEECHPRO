@@ -91,6 +91,7 @@ add_handlers()
 
 from .core.plugin_manager import get_plugin_manager
 from .modules.plugin_manager import register_plugin_commands
+from .modules import video_tools
 
 plugin_manager = get_plugin_manager()
 plugin_manager.bot = TgClient.bot
@@ -137,5 +138,5 @@ TgClient.bot.add_handler(
     )
 )
 
-LOGGER.info("WZ Client(s) & Services Started !")
+LOGGER.info("⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ Client(s) & Services Started !")
 bot_loop.run_forever()

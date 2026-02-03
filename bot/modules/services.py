@@ -33,7 +33,7 @@ async def start(_, message):
     lang = Language()
     buttons = ButtonMaker()
     buttons.url_button(
-        lang.START_BUTTON1, "https://www.github.com/HT-BOTZ-Dev/HT-BOTZ-X"
+        lang.START_BUTTON1, "https://www.github.com/HEMANTH/⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡"
     )
     buttons.url_button(lang.START_BUTTON2, "https://t.me/WZML_X")
     reply_markup = buttons.build_menu(2)
@@ -99,7 +99,7 @@ async def start(_, message):
     else:
         await send_message(
             message,
-            "<i>Bot can mirror/leech from links|tgfiles|torrents|nzb|rclone-cloud to any rclone cloud, Google Drive or to telegram.\n\n⚠️ You Are not authorized user! Deploy your own HT-BOTZ-X bot</i>",
+            "<i>Bot can mirror/leech from links|tgfiles|torrents|nzb|rclone-cloud to any rclone cloud, Google Drive or to telegram.\n\n⚠️ You Are not authorized user! Deploy your own ⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ bot</i>",
             reply_markup,
         )
     await database.set_pm_users(userid)

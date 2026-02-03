@@ -20,7 +20,7 @@ class SpeedtestPlugin(PluginBase):
     PLUGIN_INFO = PluginInfo(
         name="speedtest_plugin",
         version="1.0.0",
-        author="HT-BOTZ-X",
+        author="⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡",
         description="Speedtest plugin for testing internet speed",
         enabled=True,
         handlers=[],

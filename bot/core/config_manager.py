@@ -16,6 +16,8 @@ class Config:
     DATABASE_URL = ""
     DEFAULT_UPLOAD = "rc"
     DELETE_LINKS = False
+    EE_VIDEO_TOOL = False
+    AUTO_MERGE = False
     DEBRID_LINK_API = ""
     DISABLE_TORRENTS = False
     DISABLE_LEECH = False
@@ -35,8 +37,8 @@ class Config:
     PROTECTED_API = ""
     BUZZHEAVIER_API = ""
     GDRIVE_ID = ""
-    GD_DESP = "Uploaded with WZ Bot"
-    AUTHOR_NAME = "HT-BOTZ-X"
+    GD_DESP = "Uploaded with ⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ Bot"
+    AUTHOR_NAME = "⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡"
     AUTHOR_URL = "https://t.me/WZML_X"
     INSTADL_API = ""
     IMDB_TEMPLATE = ""
@@ -119,7 +121,7 @@ class Config:
     USE_SERVICE_ACCOUNTS = False
     WEB_PINCODE = True
     YT_DLP_OPTIONS = {}
-    YT_DESP = "Uploaded with HT-BOTZ-X bot"
+    YT_DESP = "Uploaded with ⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ bot"
     YT_TAGS = ["telegram", "bot", "youtube"]
     YT_CATEGORY_ID = 22
     YT_PRIVACY_STATUS = "unlisted"

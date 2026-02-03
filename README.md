@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 HT BOTZ: The Ultimate Mirror-Leech Experience
+# ⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ Ultimate Mirror-Leech Bot
 
 [![GitHub license](https://img.shields.io/badge/License-AGPL%203.0-blue.svg?style=for-the-badge)](LICENSE)
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-green.svg?style=for-the-badge)](https://www.python.org/)
@@ -20,7 +20,7 @@
 
 ## 📖 Overview
 
-**HT BOTZ** is a specialized fork of the powerful **HT-BOTZ-X** (Wanda Zebra) project. It is designed to be a one-stop solution for Telegram power users who need to mirror content to the cloud, leech files directly to Telegram, and perform advanced video processing on the fly.
+**⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡** is a fully modified, high-performance fork of the powerful Wanda Zebra project. It is meticulously designed to be a one-stop solution for Telegram power users who need to mirror content to the cloud, leech files directly to Telegram, and perform advanced video processing on the fly.
 
 ---
 
@@ -51,7 +51,7 @@ Get your bot up and running in minutes using one of our supported deployment met
 | Method | Best For | Guide |
 | :--- | :--- | :--- |
 | **🐳 Docker** | VPS & Dedicated Servers | [Docker Guide](deployment_guide.md#-docker-deployment-recommended) |
-| **💜 Heroku** | Free/Cheap Cloud Hosting | [Heroku Guide](deployment_guide.md#-heroku-deployment) |
+| **💜 Heroku** | Cloud Hosting | [Heroku Guide](deployment_guide.md#-heroku-deployment) |
 | **💻 Local** | Testing & Development | [Local Guide](deployment_guide.md#-local-deployment) |
 
 > **Note**: A **MongoDB** database is required for settings persistence and user management.
@@ -68,11 +68,11 @@ Get your bot up and running in minutes using one of our supported deployment met
 
 ## 🤝 Support & Credits
 
-- **Original Project**: [HT-BOTZ-Dev/HT-BOTZ-X](https://github.com/HT-BOTZ-Dev/HT-BOTZ-X)
-- **Framework**: Built with [Pyrogram](https://github.com/pyrogram/pyrogram) in Python.
+- **Creator**: [⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡](https://t.me/HEMANTH)
+- **Framework**: Built with [Pyrotgfork](https://github.com/HEMANTH/pyrotgfork) in Python.
 
 ---
 
 <div align="center">
-Made with ❤️ by HT BOTZ Team
+Made with ❤️ by ⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ Team
 </div>

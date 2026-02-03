@@ -43,22 +43,6 @@ class SetInterval:
 def _build_command_usage(help_dict, command_key):
     buttons = ButtonMaker()
     cmd_list = list(help_dict.keys())[1:]
-    temp_store = []
-    cmd_pages = [cmd_list[i : i + 10] for i in range(0, len(cmd_list), 10)]
-    for i in range(1, len(cmd_pages) + 1):
-        for name in cmd_pages[i]:
-            buttons.data_button(name, f"help {command_key} {name}")
-        buttons.data_button("Prev", f"help pre {command_key} {i - 1}")
-        buttons.data_button("Next", f"help nex {command_key} {i + 1}")
-        buttons.data_button("Close", "help close", "footer")
-        temp_store.append(buttons.build_menu(2))
-    COMMAND_USAGE[command_key] = [help_dict["main"], *temp_store]
-    buttons.reset()
-
-
-def _build_command_usage(help_dict, command_key):
-    buttons = ButtonMaker()
-    cmd_list = list(help_dict.keys())[1:]
     cmd_pages = [cmd_list[i : i + 10] for i in range(0, len(cmd_list), 10)]
     temp_store = []
 
@@ -155,6 +139,7 @@ def arg_parser(items, arg_base):
         "-ut",
         "-bt",
         "-yt",
+        "-vt",
     }
     if Config.DISABLE_BULK and "-b" in items:
         arg_base["-b"] = False
@@ -189,6 +174,7 @@ def arg_parser(items, arg_base):
                     "-ut",
                     "-bt",
                     "-yt",
+                    "-vt",
                 ]
             ):
                 arg_base[part] = True

@@ -342,8 +342,8 @@ def direct_link_generator(link):
 def get_captcha_token(session, params):
     recaptcha_api = "https://www.google.com/recaptcha/api2"
     res = session.get(f"{recaptcha_api}/anchor", params=params)
-    anchor_html = HTML(res.text)
-    if not (anchor_token := anchor_html.xpath('//input[@id="recaptcha-token"]/@value')):
+    anchor_hemml = HTML(res.text)
+    if not (anchor_token := anchor_hemml.xpath('//input[@id="recaptcha-token"]/@value')):
         return
     params["c"] = anchor_token[0]
     params["reason"] = "q"
@@ -1547,8 +1547,8 @@ def send_cm(url):
     def __writeContents(html_text, folderPath=""):
         folders = __collectFolders(html_text)
         for folder in folders:
-            _html = HTML(cf_bypass(folder["folder_link"]))
-            __writeContents(_html, ospath.join(folderPath, folder["folder_name"]))
+            _hemml = HTML(cf_bypass(folder["folder_link"]))
+            __writeContents(_hemml, ospath.join(folderPath, folder["folder_name"]))
         files = __getFiles(html_text)
         for file in files:
             if not (link := __getFile_link(file["file_id"])):
@@ -1623,9 +1623,9 @@ def easyupload(url):
             _res = session.get(url)
         except Exception as e:
             raise DirectDownloadLinkException(f"ERROR: {e.__class__.__name__}")
-        first_page_html = HTML(_res.text)
+        first_page_hemml = HTML(_res.text)
         if (
-            first_page_html.xpath("//h6[contains(text(),'Password Protected')]")
+            first_page_hemml.xpath("//h6[contains(text(),'Password Protected')]")
             and not _password
         ):
             raise DirectDownloadLinkException(
