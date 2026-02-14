@@ -44,3 +44,4 @@ yt-dlp
 curl-cffi
 cython
 setuptools
+tzlocal

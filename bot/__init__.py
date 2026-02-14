@@ -1,6 +1,7 @@
 # ruff: noqa: E402
 
 from uvloop import install
+from tzlocal import get_localzone
 
 install()
 

@@ -103,7 +103,7 @@ TIMEZONE = "Asia/Kolkata"
 
 # GDrive Tools
 GDRIVE_ID = ""
-GD_DESP = "Uploaded with WZ Bot"
+GD_DESP = "Uploaded with ⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ Bot"
 IS_TEAM_DRIVE = False
 STOP_DUPLICATE = False
 INDEX_URL = ""

@@ -20,7 +20,7 @@
 
 ## 📖 Overview
 
-**⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡** is a fully modified, high-performance fork of the powerful Wanda Zebra project. It is meticulously designed to be a one-stop solution for Telegram power users who need to mirror content to the cloud, leech files directly to Telegram, and perform advanced video processing on the fly.
+**⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡** is a fully modified, high-performance fork of the powerful ⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ project. It is meticulously designed to be a one-stop solution for Telegram power users who need to mirror content to the cloud, leech files directly to Telegram, and perform advanced video processing on the fly.
 
 ---
 

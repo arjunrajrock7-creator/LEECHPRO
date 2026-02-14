@@ -12,13 +12,15 @@ RUN chmod 777 /usr/src/app
 # - default-jre: required for JDownloader
 # - libmagic1: required for python-magic
 # - cpulimit: used in setpkgs.sh
+# - screen: requested/mentioned by user
 RUN apt-get update && apt-get install -y \
     curl git aria2 ffmpeg rclone qbittorrent-nox sabnzbdplus \
-    default-jre libmagic1 cpulimit \
+    default-jre libmagic1 cpulimit screen \
     libavformat-dev libavcodec-dev libavdevice-dev \
     libavfilter-dev libavutil-dev libswresample-dev \
     libswscale-dev libpostproc-dev \
     gcc g++ make python3-dev jq \
+    && apt-get autoremove -y && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 # Create symlinks for ⚡𝗛𝗘𝗠𝗔𝗡𝗧𝗛⚡ custom binary names
